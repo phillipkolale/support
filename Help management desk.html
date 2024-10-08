@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Support Hub</title>
+    <link rel="stylesheet" href="font.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Student Support Hub</div>
+        <nav>
+            <ul>
+                <li><a href="C:\Users\HP\OneDrive\Desktop\STUDENT SUPPORT HUB\New folder\Help management desk.html">Home</a></li>
+                <li><a href="C:\Users\HP\OneDrive\Desktop\STUDENT SUPPORT HUB\About.html">About Us</a></li>
+                <li><a href="C:\Users\HP\OneDrive\Desktop\STUDENT SUPPORT HUB\services.html">Services</a></li>
+                <li><a href="C:\Users\HP\OneDrive\Desktop\STUDENT SUPPORT HUB\resources.html">Resources</a></li>
+                <li><a href="C:\Users\HP\OneDrive\Desktop\STUDENT SUPPORT HUB\contacts2.html">Contact Us</a></li>
+                <li><a href="C:\Users\HP\OneDrive\Desktop\STUDENT SUPPORT HUB\loginjav.html">Login</a></li>
+				 <li><a href="C:\Users\HP\OneDrive\Desktop\STUDENT SUPPORT HUB\signup.html">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="C:\Users\HP\OneDrive\Desktop\STUDENT SUPPORT HUB\New folder\images\Events1.jpeg" alt="Event 1">
+            </div>
+            <div class="slide fade">
+                <img src="C:\Users\HP\OneDrive\Desktop\STUDENT SUPPORT HUB\New folder\images\event2 .jpg" alt="Event 2">
+            </div>
+            <div class="slide fade">
+                <img src="C:\Users\HP\OneDrive\Desktop\STUDENT SUPPORT HUB\New folder\images\events3.jpeg" alt="Event 3">
+            </div>
+        </div>
+        <div class="hero-text">
+            <h1>Welcome to Your Student Support Hub</h1>
+            <p>Your one-stop solution for academic assistance and resources.</p>
+            <a href="C:\Users\HP\OneDrive\Desktop\STUDENT SUPPORT HUB\getstarted.html" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Our Features</h2>
+        <div class="feature-card">
+            <h3>Academic Assistance</h3>
+            <p>Get help with your studies and assignments.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Counseling Services</h3>
+            <p>Access mental health and wellness support.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Career Guidance</h3>
+            <p>Explore career options and job opportunities.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Events & Workshops</h3>
+            <p>Join us for skill-building workshops and events.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Student Support Hub. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            const slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex - 1].style.display = "block";  
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+</body>
+</html>
